@@ -14,25 +14,22 @@ class ViewController: UIViewController {
   @IBOutlet var coffeeRatioTF: UITextField!
   @IBOutlet var waterRatioTF: UITextField!
   @IBOutlet var waterGramsLabel: UILabel!
-  var startTime = TimeInterval()
-  var timer = Timer()
-  var timerRunning = false
-
   @IBOutlet var displayTimeLabel: UILabel!
+  
+  var timer = JMPTimer()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    let backgroundImage = UIImageView(frame: UIScreen.main().bounds)
+    
+
+    timer = JMPTimer(withLabel: displayTimeLabel)
+    
+    let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
     backgroundImage.image = UIImage(named: "background")
     self.view.insertSubview(backgroundImage, at: 0)
     let myColor : UIColor = UIColor( red: 255, green: 255, blue:255, alpha: 1.0 )
     coffeeTF.layer.borderColor = myColor.cgColor
     coffeeTF.layer.borderWidth = 1
-//    coffeeRatioTF.layer.borderColor = myColor.CGColor
-//    waterRatioTF.layer.borderColor = myColor.CGColor
-
-//    coffeeRatioTF.layer.borderWidth = 1
-//    waterRatioTF.layer.borderWidth = 1
-    
     let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
     view.addGestureRecognizer(tap)
     
@@ -45,73 +42,36 @@ class ViewController: UIViewController {
     view.endEditing(true)
   }
   
+  func calculateWaterInGrams(coffee: Float, water: Float) -> Float {
+    return coffee * water
+  }
+  
   @IBAction func editingChanged(_ sender: UITextField) {
     if ((coffeeTF.text != nil) && (coffeeRatioTF.text != nil) && (waterRatioTF.text != nil)) {
-      let waterGrams = ((waterRatioTF.text! as NSString).floatValue) * ((coffeeTF.text! as NSString).floatValue)
+      //let waterGrams = ((waterRatioTF.text! as NSString).floatValue) * ((coffeeTF.text! as NSString).floatValue)
+      
+      let coffeeLabelAsFloat = (coffeeTF.text! as NSString).floatValue
+      let waterValueAsFloat = (waterRatioTF.text! as NSString).floatValue
+      let waterGrams = calculateWaterInGrams(coffee: coffeeLabelAsFloat, water: waterValueAsFloat)
       
       waterGramsLabel.text = NSString(format: "%.1f", waterGrams) as String
       
       if waterGrams == 0.0 {
         waterGramsLabel.text = ""
       }
-      
     }
-    
-  }
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-  
-  func updateTime() {
-    
-    let currentTime = Date.timeIntervalSinceReferenceDate
-    
-    //Find the difference between current time and start time.
-    
-    var elapsedTime: TimeInterval = currentTime - startTime
-    
-    //calculate the minutes in elapsed time.
-    
-    let minutes = UInt8(elapsedTime / 60.0)
-    
-    elapsedTime -= (TimeInterval(minutes) * 60)
-    
-    //calculate the seconds in elapsed time.
-    
-    let seconds = UInt8(elapsedTime)
-    
-    elapsedTime -= TimeInterval(seconds)
-    
-    //find out the fraction of milliseconds to be displayed.
-    
-    //let fraction = UInt8(elapsedTime * 100)
-    
-    //add the leading zero for minutes, seconds and millseconds and store them as string constants
-    
-    let strMinutes = String(format: "%02d", minutes)
-    let strSeconds = String(format: "%02d", seconds)
-    //let strFraction = String(format: "%02d", fraction)
-    
-    //concatenate minuets, seconds and milliseconds as assign it to the UILabel
-    
-    displayTimeLabel.text = "\(strMinutes):\(strSeconds)"
   }
   
   @IBAction func start(_ sender: AnyObject) {
-    if !timer.isValid {
-      let aSelector : Selector = #selector(ViewController.updateTime)
-      timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: aSelector,     userInfo: nil, repeats: true)
-      startTime = Date.timeIntervalSinceReferenceDate
-    }
+    timer.start()
   }
   
   @IBAction func stop(_ sender: AnyObject) {
-    timer.invalidate()
+    timer.stop()
   }
   
   @IBAction func clear() {
-    displayTimeLabel.text = "00:00"
+    timer.clear()
   }
 }
 

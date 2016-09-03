@@ -1,0 +1,21 @@
+
+/* Class = "UITextField"; text = "18.5"; ObjectID = "0uM-di-9rN"; */
+"0uM-di-9rN.text" = "18.5";
+
+/* Class = "UITextField"; text = "1"; ObjectID = "5FD-Tl-Mxw"; */
+"5FD-Tl-Mxw.text" = "1";
+
+/* Class = "UIButton"; normalTitle = "Clear"; ObjectID = "FpN-tT-0Gf"; */
+"FpN-tT-0Gf.normalTitle" = "Clear";
+
+/* Class = "UILabel"; text = "coffee grams"; ObjectID = "hXg-ZT-Tjg"; */
+"hXg-ZT-Tjg.text" = "coffee grams";
+
+/* Class = "UIButton"; normalTitle = "End"; ObjectID = "nJB-7c-GFy"; */
+"nJB-7c-GFy.normalTitle" = "End";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "ocl-Ge-qAM"; */
+"ocl-Ge-qAM.normalTitle" = "Start";
+
+/* Class = "UILabel"; text = "00:00"; ObjectID = "s5A-cP-KRY"; */
+"s5A-cP-KRY.text" = "00:00";

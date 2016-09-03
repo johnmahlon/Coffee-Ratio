@@ -28,6 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "47916B9B1D4AA53100DA1116"
+               BuildableName = "Coffee RatioUITests.xctest"
+               BlueprintName = "Coffee RatioUITests"
+               ReferencedContainer = "container:Coffee Ratio.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "47A8FC931D4D7068004D412C"
+               BuildableName = "Coffee Ratio UITests.xctest"
+               BlueprintName = "Coffee Ratio UITests"
+               ReferencedContainer = "container:Coffee Ratio.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "47A8FCA41D4D75A8004D412C"
+               BuildableName = "Coffee RatioTests.xctest"
+               BlueprintName = "Coffee RatioTests"
+               ReferencedContainer = "container:Coffee Ratio.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
