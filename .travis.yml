@@ -1,3 +1,2 @@
-language: swift
-swift:
-3.0
+language: objective-c
+
