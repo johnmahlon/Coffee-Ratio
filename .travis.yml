@@ -8,6 +8,8 @@ branches:
 script:
   - xctool -workspace Coffee\ Ratio.xcworkspace -scheme Coffee\ Ratio -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
   - xctool test -workspace Coffee\ Ratio.xcworkspace -scheme Coffee\ RatioTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  
+notifications: never
 
 
 
