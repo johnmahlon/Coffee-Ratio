@@ -3,7 +3,7 @@ branches:
   only:
     - master
 xcode_project: Coffee Ratio.xcodeproj
-xcode_scheme: Coffee RatioTests
+xcode_scheme: Coffee Ratio
 osx_image: beta-xcode8.0
 xcode_sdk: iphonesimulator10.0
 
