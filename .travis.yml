@@ -1,11 +1,13 @@
 language: objective-c
+osx_image: xcode8
+
 branches:
   only:
     - master
     
 script:
-  - xctool -workspace Coffee Ratio.xcworkspace -scheme Coffee ratio -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-  - xctool test -workspace Coffee Ratio.xcworkspace -scheme Coffee RatioTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xctool -workspace Coffee\ Ratio.xcworkspace -scheme Coffee\ Ratio -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+  - xctool test -workspace Coffee\ Ratio.xcworkspace -scheme Coffee\ RatioTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 
 
 
