@@ -1,3 +1,11 @@
-language: swift
-swift:
-3.0
+language: objective-c
+branches:
+  only:
+    - master
+xcode_project: Coffee\ Ratio.xcodeproj
+xcode_scheme: Coffee\ RatioTests
+osx_image: beta-xcode8.0
+xcode_sdk: iphonesimulator10.0
+
+
+
