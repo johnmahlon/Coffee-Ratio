@@ -7,8 +7,6 @@ branches:
     
 notifications: never
 
-script:
-- xcodebuild -project CoffeeRatio.xcodeproj -target Coffee\ Ratio -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 
 
 
