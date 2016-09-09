@@ -22,6 +22,8 @@
  SOFTWARE.
  */
 
+// Color: 41 41 49
+
 import UIKit
 
 class ViewController: UIViewController {
