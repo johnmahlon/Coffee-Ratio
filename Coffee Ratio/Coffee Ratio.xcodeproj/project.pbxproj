@@ -24,6 +24,7 @@
 		47A8FCA81D4D75A9004D412C /* Coffee_RatioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A8FCA71D4D75A9004D412C /* Coffee_RatioTests.swift */; };
 		47A8FCAF1D4D7624004D412C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4732BEE21CFAA48E0021E4F4 /* ViewController.swift */; };
 		47A8FCB01D4D76A3004D412C /* JMPTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47916B951D4AA15100DA1116 /* JMPTimer.swift */; };
+		47D9E2FF1D826B9400CDB97E /* rlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 47D9E2FE1D826B9400CDB97E /* rlogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		47A8FCA51D4D75A8004D412C /* Coffee RatioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coffee RatioTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47A8FCA71D4D75A9004D412C /* Coffee_RatioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee_RatioTests.swift; sourceTree = "<group>"; };
 		47A8FCA91D4D75A9004D412C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47D9E2FE1D826B9400CDB97E /* rlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rlogo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			children = (
 				472C7EC91D07482400B8AB5B /* RatioLogo.png */,
 				4732BF1A1CFE2F6A0021E4F4 /* logo.png */,
+				47D9E2FE1D826B9400CDB97E /* rlogo.png */,
 				4732BEF21CFAAFAA0021E4F4 /* background.png */,
 			);
 			name = Photos;
@@ -276,6 +279,7 @@
 			files = (
 				4732BEEB1CFAA48E0021E4F4 /* LaunchScreen.storyboard in Resources */,
 				4732BF1B1CFE2F6A0021E4F4 /* logo.png in Resources */,
+				47D9E2FF1D826B9400CDB97E /* rlogo.png in Resources */,
 				4732BEF31CFAAFAA0021E4F4 /* background.png in Resources */,
 				4732BEE81CFAA48E0021E4F4 /* Assets.xcassets in Resources */,
 				472C7ECA1D07482400B8AB5B /* RatioLogo.png in Resources */,
