@@ -35,15 +35,20 @@ class ViewController: UIViewController {
   @IBOutlet var displayTimeLabel: UILabel!
   
   var timer = JMPTimer()
+  var waterValues: [String]?
+  var coffeeValues: [String]?
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    waterValues = ["18.5", "0.375"]
+    coffeeValues = ["1", "1"]
     
 
     timer = JMPTimer(withLabel: displayTimeLabel)
     
     let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-    backgroundImage.image = UIImage(named: "background")
+    //backgroundImage.image = UIImage(named: "background")
     self.view.insertSubview(backgroundImage, at: 0)
     let myColor : UIColor = UIColor( red: 255, green: 255, blue:255, alpha: 1.0 )
     coffeeTF.layer.borderColor = myColor.cgColor
@@ -72,7 +77,7 @@ class ViewController: UIViewController {
       let waterValueAsFloat = (waterRatioTF.text! as NSString).floatValue
       let waterGrams = calculateWaterInGrams(coffee: coffeeLabelAsFloat, water: waterValueAsFloat)
       
-      waterGramsLabel.text = NSString(format: "%.1f", waterGrams) as String
+      waterGramsLabel.text = NSString(format: "%.2f", waterGrams) as String
       
       if waterGrams == 0.0 {
         waterGramsLabel.text = ""
@@ -91,5 +96,15 @@ class ViewController: UIViewController {
   @IBAction func clear() {
     timer.clear()
   }
+  
+  
+  @IBAction func segmentedControlChanged(_ sender: UISegmentedControl) {
+    waterRatioTF.text = waterValues?[sender.selectedSegmentIndex]
+    
+    
+    
+  }
+  
+  
 }
 
