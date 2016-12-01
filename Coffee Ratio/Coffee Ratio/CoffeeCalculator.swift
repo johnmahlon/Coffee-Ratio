@@ -25,10 +25,8 @@
 import Foundation
 
 class CoffeeCalculator {
-  
   /* Variables */
   var gramsOfWater: Double
-  
   init() {
     gramsOfWater = 18.5
   }
