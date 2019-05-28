@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -36,22 +36,11 @@
                                 <rect key="frame" x="231" y="484" width="73" height="64"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="24"/>
-                                <state key="normal" title="End">
+                                <state key="normal" title="Reset">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i3c-Z5-LoU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FpN-tT-0Gf">
-                                <rect key="frame" x="124" y="484" width="73" height="64"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="24"/>
-                                <state key="normal" title="Clear">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="clear" destination="BYZ-38-t0r" eventType="touchUpInside" id="VdG-o5-pnk"/>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i3c-Z5-LoU"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="waterInGrams" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5A-cP-KRY">
@@ -132,6 +121,8 @@
                         <outlet property="coffeeRatioTF" destination="5FD-Tl-Mxw" id="heb-MA-hj4"/>
                         <outlet property="coffeeTF" destination="0Pi-SW-gnB" id="AWY-yY-KeX"/>
                         <outlet property="displayTimeLabel" destination="s5A-cP-KRY" id="ddt-1S-kEM"/>
+                        <outlet property="resetButton" destination="nJB-7c-GFy" id="ciO-EQ-2dt"/>
+                        <outlet property="startButton" destination="ocl-Ge-qAM" id="cVt-si-L1S"/>
                         <outlet property="waterGramsLabel" destination="Q9D-uW-0r3" id="5gi-Ke-rFU"/>
                         <outlet property="waterRatioTF" destination="0uM-di-9rN" id="zbi-1F-7ft"/>
                     </connections>
