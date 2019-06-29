@@ -33,6 +33,8 @@ class ViewController: UIViewController {
   @IBOutlet var waterRatioTF: UITextField!
   @IBOutlet var waterGramsLabel: UILabel!
   @IBOutlet var displayTimeLabel: UILabel!
+  @IBOutlet weak var startButton: UIButton!
+  @IBOutlet weak var resetButton: UIButton!
   
   var timer = JMPTimer()
   var waterValues: [String]?
@@ -86,17 +88,18 @@ class ViewController: UIViewController {
   }
   
   @IBAction func start(_ sender: AnyObject) {
-    timer.start()
+    if timer.timerRunning {
+      timer.stop()
+      startButton.setTitle("Start", for: .normal)
+    } else {
+      timer.start()
+      startButton.setTitle("Stop", for: .normal)
+    }
   }
   
-  @IBAction func stop(_ sender: AnyObject) {
-    timer.stop()
-  }
-  
-  @IBAction func clear() {
+  @IBAction func reset(_ sender: AnyObject) {
     timer.clear()
   }
-  
   
   @IBAction func segmentedControlChanged(_ sender: UISegmentedControl) {
     waterRatioTF.text = waterValues?[sender.selectedSegmentIndex]
