@@ -16,6 +16,8 @@
 		526BD859240771A300A24AD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526BD857240771A300A24AD2 /* LaunchScreen.storyboard */; };
 		526BD864240771A300A24AD2 /* RatiosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526BD863240771A300A24AD2 /* RatiosTests.swift */; };
 		526BD86F240771A300A24AD2 /* RatiosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526BD86E240771A300A24AD2 /* RatiosUITests.swift */; };
+		526BD87E24077F4200A24AD2 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526BD87D24077F4200A24AD2 /* TimerView.swift */; };
+		526BD88224079A5B00A24AD2 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526BD88124079A5B00A24AD2 /* TimerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		526BD86A240771A300A24AD2 /* RatiosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RatiosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		526BD86E240771A300A24AD2 /* RatiosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatiosUITests.swift; sourceTree = "<group>"; };
 		526BD870240771A300A24AD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		526BD87D24077F4200A24AD2 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		526BD88124079A5B00A24AD2 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		526BD848240771A100A24AD2 /* Ratios */ = {
 			isa = PBXGroup;
 			children = (
+				526BD87C24077F3300A24AD2 /* Views */,
 				526BD849240771A100A24AD2 /* AppDelegate.swift */,
 				526BD84B240771A100A24AD2 /* SceneDelegate.swift */,
 				526BD850240771A100A24AD2 /* ContentView.swift */,
@@ -109,6 +114,7 @@
 				526BD85A240771A300A24AD2 /* Info.plist */,
 				526BD84D240771A100A24AD2 /* Ratios.xcdatamodeld */,
 				526BD854240771A300A24AD2 /* Preview Content */,
+				526BD88124079A5B00A24AD2 /* TimerViewModel.swift */,
 			);
 			path = Ratios;
 			sourceTree = "<group>";
@@ -137,6 +143,14 @@
 				526BD870240771A300A24AD2 /* Info.plist */,
 			);
 			path = RatiosUITests;
+			sourceTree = "<group>";
+		};
+		526BD87C24077F3300A24AD2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				526BD87D24077F4200A24AD2 /* TimerView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				526BD87E24077F4200A24AD2 /* TimerView.swift in Sources */,
 				526BD84A240771A100A24AD2 /* AppDelegate.swift in Sources */,
 				526BD84F240771A100A24AD2 /* Ratios.xcdatamodeld in Sources */,
 				526BD851240771A100A24AD2 /* ContentView.swift in Sources */,
+				526BD88224079A5B00A24AD2 /* TimerViewModel.swift in Sources */,
 				526BD84C240771A100A24AD2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
