@@ -1,5 +1,6 @@
 # Coffee-Ratio
 
+UPDATE: I have decided to work on this app again to learn SwiftUI. If you'd like to see the progress, checkout the development branch.
 
 This is an open source app made to help home brewers brew their coffee by calculating a the grams of water needed,
 and run a timer all in the same screen. 
