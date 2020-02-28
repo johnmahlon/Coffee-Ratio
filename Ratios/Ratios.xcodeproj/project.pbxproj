@@ -19,6 +19,7 @@
 		526BD87E24077F4200A24AD2 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526BD87D24077F4200A24AD2 /* TimerView.swift */; };
 		526BD88224079A5B00A24AD2 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526BD88124079A5B00A24AD2 /* TimerViewModel.swift */; };
 		526BD8842408CCFE00A24AD2 /* CoffeeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526BD8832408CCFE00A24AD2 /* CoffeeInput.swift */; };
+		526BD8862408D40200A24AD2 /* RatioInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526BD8852408D40200A24AD2 /* RatioInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		526BD87D24077F4200A24AD2 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		526BD88124079A5B00A24AD2 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		526BD8832408CCFE00A24AD2 /* CoffeeInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeInput.swift; sourceTree = "<group>"; };
+		526BD8852408D40200A24AD2 /* RatioInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatioInput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 			children = (
 				526BD87D24077F4200A24AD2 /* TimerView.swift */,
 				526BD8832408CCFE00A24AD2 /* CoffeeInput.swift */,
+				526BD8852408D40200A24AD2 /* RatioInput.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				526BD84A240771A100A24AD2 /* AppDelegate.swift in Sources */,
 				526BD84F240771A100A24AD2 /* Ratios.xcdatamodeld in Sources */,
 				526BD851240771A100A24AD2 /* ContentView.swift in Sources */,
+				526BD8862408D40200A24AD2 /* RatioInput.swift in Sources */,
 				526BD88224079A5B00A24AD2 /* TimerViewModel.swift in Sources */,
 				526BD84C240771A100A24AD2 /* SceneDelegate.swift in Sources */,
 			);
