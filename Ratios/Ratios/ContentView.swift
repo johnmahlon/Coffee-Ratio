@@ -10,7 +10,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        TimerView()
+        VStack {
+            CoffeeInput()
+            
+            Divider()
+                .background(Color("Primary"))
+                .frame(width: CGFloat(267))
+
+            TimerView()
+
+        }
     }
 }
 
