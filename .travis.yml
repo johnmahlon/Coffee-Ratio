@@ -1,4 +1,5 @@
 language: objective-c
-osx_image: xcode8.1
-xcode_project: Coffee Ratio/Coffee Ratio.xcodeproj # path to your xcodeproj folder
-xcode_scheme: Coffee RatioTests
+osx_image: xcode11.3
+xcode_project: Ratios/Ratios.xcodeproj # path to your xcodeproj folder
+xcode_scheme: Ratios 
+xcode_destination: platform=iOS Simulator,OS=13.3,name=iPhone 11 Pro 

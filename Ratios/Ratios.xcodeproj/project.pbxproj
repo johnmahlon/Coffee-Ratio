@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		526BD84A240771A100A24AD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526BD849240771A100A24AD2 /* AppDelegate.swift */; };
+		526BD84C240771A100A24AD2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526BD84B240771A100A24AD2 /* SceneDelegate.swift */; };
+		526BD84F240771A100A24AD2 /* Ratios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 526BD84D240771A100A24AD2 /* Ratios.xcdatamodeld */; };
+		526BD851240771A100A24AD2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526BD850240771A100A24AD2 /* ContentView.swift */; };
+		526BD853240771A300A24AD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526BD852240771A300A24AD2 /* Assets.xcassets */; };
+		526BD856240771A300A24AD2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526BD855240771A300A24AD2 /* Preview Assets.xcassets */; };
+		526BD859240771A300A24AD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526BD857240771A300A24AD2 /* LaunchScreen.storyboard */; };
+		526BD864240771A300A24AD2 /* RatiosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526BD863240771A300A24AD2 /* RatiosTests.swift */; };
+		526BD86F240771A300A24AD2 /* RatiosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526BD86E240771A300A24AD2 /* RatiosUITests.swift */; };
+		526BD87E24077F4200A24AD2 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526BD87D24077F4200A24AD2 /* TimerView.swift */; };
+		526BD88224079A5B00A24AD2 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526BD88124079A5B00A24AD2 /* TimerViewModel.swift */; };
+		526BD8842408CCFE00A24AD2 /* CoffeeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526BD8832408CCFE00A24AD2 /* CoffeeInput.swift */; };
+		526BD8862408D40200A24AD2 /* RatioInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526BD8852408D40200A24AD2 /* RatioInput.swift */; };
+		52712492240B563000F26EF3 /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52712491240B563000F26EF3 /* CalculatorViewModel.swift */; };
+		52712496240B566D00F26EF3 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52712495240B566D00F26EF3 /* CalculatorTests.swift */; };
+		52712498240B58CF00F26EF3 /* WaterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52712497240B58CF00F26EF3 /* WaterInput.swift */; };
+		5271249A240B663A00F26EF3 /* WaterDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52712499240B663A00F26EF3 /* WaterDisplay.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		526BD860240771A300A24AD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 526BD83E240771A100A24AD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 526BD845240771A100A24AD2;
+			remoteInfo = Ratios;
+		};
+		526BD86B240771A300A24AD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 526BD83E240771A100A24AD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 526BD845240771A100A24AD2;
+			remoteInfo = Ratios;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		526BD846240771A100A24AD2 /* Ratios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ratios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		526BD849240771A100A24AD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		526BD84B240771A100A24AD2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		526BD84E240771A100A24AD2 /* Ratios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ratios.xcdatamodel; sourceTree = "<group>"; };
+		526BD850240771A100A24AD2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		526BD852240771A300A24AD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		526BD855240771A300A24AD2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		526BD858240771A300A24AD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		526BD85A240771A300A24AD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		526BD85F240771A300A24AD2 /* RatiosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RatiosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		526BD863240771A300A24AD2 /* RatiosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatiosTests.swift; sourceTree = "<group>"; };
+		526BD865240771A300A24AD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		526BD86A240771A300A24AD2 /* RatiosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RatiosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		526BD86E240771A300A24AD2 /* RatiosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatiosUITests.swift; sourceTree = "<group>"; };
+		526BD870240771A300A24AD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		526BD87D24077F4200A24AD2 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		526BD88124079A5B00A24AD2 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		526BD8832408CCFE00A24AD2 /* CoffeeInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeInput.swift; sourceTree = "<group>"; };
+		526BD8852408D40200A24AD2 /* RatioInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatioInput.swift; sourceTree = "<group>"; };
+		52712491240B563000F26EF3 /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
+		52712495240B566D00F26EF3 /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
+		52712497240B58CF00F26EF3 /* WaterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterInput.swift; sourceTree = "<group>"; };
+		52712499240B663A00F26EF3 /* WaterDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterDisplay.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		526BD843240771A100A24AD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		526BD85C240771A300A24AD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		526BD867240771A300A24AD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		526BD83D240771A100A24AD2 = {
+			isa = PBXGroup;
+			children = (
+				526BD848240771A100A24AD2 /* Ratios */,
+				526BD862240771A300A24AD2 /* RatiosTests */,
+				526BD86D240771A300A24AD2 /* RatiosUITests */,
+				526BD847240771A100A24AD2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		526BD847240771A100A24AD2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				526BD846240771A100A24AD2 /* Ratios.app */,
+				526BD85F240771A300A24AD2 /* RatiosTests.xctest */,
+				526BD86A240771A300A24AD2 /* RatiosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		526BD848240771A100A24AD2 /* Ratios */ = {
+			isa = PBXGroup;
+			children = (
+				52712490240B554D00F26EF3 /* View Models */,
+				526BD87C24077F3300A24AD2 /* Views */,
+				526BD849240771A100A24AD2 /* AppDelegate.swift */,
+				526BD84B240771A100A24AD2 /* SceneDelegate.swift */,
+				526BD850240771A100A24AD2 /* ContentView.swift */,
+				526BD852240771A300A24AD2 /* Assets.xcassets */,
+				526BD857240771A300A24AD2 /* LaunchScreen.storyboard */,
+				526BD85A240771A300A24AD2 /* Info.plist */,
+				526BD84D240771A100A24AD2 /* Ratios.xcdatamodeld */,
+				526BD854240771A300A24AD2 /* Preview Content */,
+			);
+			path = Ratios;
+			sourceTree = "<group>";
+		};
+		526BD854240771A300A24AD2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				526BD855240771A300A24AD2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		526BD862240771A300A24AD2 /* RatiosTests */ = {
+			isa = PBXGroup;
+			children = (
+				526BD863240771A300A24AD2 /* RatiosTests.swift */,
+				526BD865240771A300A24AD2 /* Info.plist */,
+				52712495240B566D00F26EF3 /* CalculatorTests.swift */,
+			);
+			path = RatiosTests;
+			sourceTree = "<group>";
+		};
+		526BD86D240771A300A24AD2 /* RatiosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				526BD86E240771A300A24AD2 /* RatiosUITests.swift */,
+				526BD870240771A300A24AD2 /* Info.plist */,
+			);
+			path = RatiosUITests;
+			sourceTree = "<group>";
+		};
+		526BD87C24077F3300A24AD2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				526BD87D24077F4200A24AD2 /* TimerView.swift */,
+				526BD8832408CCFE00A24AD2 /* CoffeeInput.swift */,
+				526BD8852408D40200A24AD2 /* RatioInput.swift */,
+				52712497240B58CF00F26EF3 /* WaterInput.swift */,
+				52712499240B663A00F26EF3 /* WaterDisplay.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		52712490240B554D00F26EF3 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				526BD88124079A5B00A24AD2 /* TimerViewModel.swift */,
+				52712491240B563000F26EF3 /* CalculatorViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		526BD845240771A100A24AD2 /* Ratios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 526BD873240771A400A24AD2 /* Build configuration list for PBXNativeTarget "Ratios" */;
+			buildPhases = (
+				526BD842240771A100A24AD2 /* Sources */,
+				526BD843240771A100A24AD2 /* Frameworks */,
+				526BD844240771A100A24AD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ratios;
+			productName = Ratios;
+			productReference = 526BD846240771A100A24AD2 /* Ratios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		526BD85E240771A300A24AD2 /* RatiosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 526BD876240771A400A24AD2 /* Build configuration list for PBXNativeTarget "RatiosTests" */;
+			buildPhases = (
+				526BD85B240771A300A24AD2 /* Sources */,
+				526BD85C240771A300A24AD2 /* Frameworks */,
+				526BD85D240771A300A24AD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				526BD861240771A300A24AD2 /* PBXTargetDependency */,
+			);
+			name = RatiosTests;
+			productName = RatiosTests;
+			productReference = 526BD85F240771A300A24AD2 /* RatiosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		526BD869240771A300A24AD2 /* RatiosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 526BD879240771A400A24AD2 /* Build configuration list for PBXNativeTarget "RatiosUITests" */;
+			buildPhases = (
+				526BD866240771A300A24AD2 /* Sources */,
+				526BD867240771A300A24AD2 /* Frameworks */,
+				526BD868240771A300A24AD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				526BD86C240771A300A24AD2 /* PBXTargetDependency */,
+			);
+			name = RatiosUITests;
+			productName = RatiosUITests;
+			productReference = 526BD86A240771A300A24AD2 /* RatiosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		526BD83E240771A100A24AD2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "John Peden";
+				TargetAttributes = {
+					526BD845240771A100A24AD2 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					526BD85E240771A300A24AD2 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 526BD845240771A100A24AD2;
+					};
+					526BD869240771A300A24AD2 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 526BD845240771A100A24AD2;
+					};
+				};
+			};
+			buildConfigurationList = 526BD841240771A100A24AD2 /* Build configuration list for PBXProject "Ratios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 526BD83D240771A100A24AD2;
+			productRefGroup = 526BD847240771A100A24AD2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				526BD845240771A100A24AD2 /* Ratios */,
+				526BD85E240771A300A24AD2 /* RatiosTests */,
+				526BD869240771A300A24AD2 /* RatiosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		526BD844240771A100A24AD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				526BD859240771A300A24AD2 /* LaunchScreen.storyboard in Resources */,
+				526BD856240771A300A24AD2 /* Preview Assets.xcassets in Resources */,
+				526BD853240771A300A24AD2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		526BD85D240771A300A24AD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		526BD868240771A300A24AD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		526BD842240771A100A24AD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				526BD8842408CCFE00A24AD2 /* CoffeeInput.swift in Sources */,
+				52712492240B563000F26EF3 /* CalculatorViewModel.swift in Sources */,
+				52712498240B58CF00F26EF3 /* WaterInput.swift in Sources */,
+				526BD87E24077F4200A24AD2 /* TimerView.swift in Sources */,
+				526BD84A240771A100A24AD2 /* AppDelegate.swift in Sources */,
+				5271249A240B663A00F26EF3 /* WaterDisplay.swift in Sources */,
+				526BD84F240771A100A24AD2 /* Ratios.xcdatamodeld in Sources */,
+				526BD851240771A100A24AD2 /* ContentView.swift in Sources */,
+				526BD8862408D40200A24AD2 /* RatioInput.swift in Sources */,
+				526BD88224079A5B00A24AD2 /* TimerViewModel.swift in Sources */,
+				526BD84C240771A100A24AD2 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		526BD85B240771A300A24AD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				526BD864240771A300A24AD2 /* RatiosTests.swift in Sources */,
+				52712496240B566D00F26EF3 /* CalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		526BD866240771A300A24AD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				526BD86F240771A300A24AD2 /* RatiosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		526BD861240771A300A24AD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 526BD845240771A100A24AD2 /* Ratios */;
+			targetProxy = 526BD860240771A300A24AD2 /* PBXContainerItemProxy */;
+		};
+		526BD86C240771A300A24AD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 526BD845240771A100A24AD2 /* Ratios */;
+			targetProxy = 526BD86B240771A300A24AD2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		526BD857240771A300A24AD2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				526BD858240771A300A24AD2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		526BD871240771A400A24AD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		526BD872240771A400A24AD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		526BD874240771A400A24AD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Ratios/Preview Content\"";
+				DEVELOPMENT_TEAM = 26V332SYBX;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Ratios/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnmahlonpeden.Ratios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		526BD875240771A400A24AD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Ratios/Preview Content\"";
+				DEVELOPMENT_TEAM = 26V332SYBX;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Ratios/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnmahlonpeden.Ratios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		526BD877240771A400A24AD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26V332SYBX;
+				INFOPLIST_FILE = RatiosTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnmahlonpeden.RatiosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ratios.app/Ratios";
+			};
+			name = Debug;
+		};
+		526BD878240771A400A24AD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26V332SYBX;
+				INFOPLIST_FILE = RatiosTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnmahlonpeden.RatiosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ratios.app/Ratios";
+			};
+			name = Release;
+		};
+		526BD87A240771A400A24AD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26V332SYBX;
+				INFOPLIST_FILE = RatiosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnmahlonpeden.RatiosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ratios;
+			};
+			name = Debug;
+		};
+		526BD87B240771A400A24AD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 26V332SYBX;
+				INFOPLIST_FILE = RatiosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johnmahlonpeden.RatiosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ratios;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		526BD841240771A100A24AD2 /* Build configuration list for PBXProject "Ratios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				526BD871240771A400A24AD2 /* Debug */,
+				526BD872240771A400A24AD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		526BD873240771A400A24AD2 /* Build configuration list for PBXNativeTarget "Ratios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				526BD874240771A400A24AD2 /* Debug */,
+				526BD875240771A400A24AD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		526BD876240771A400A24AD2 /* Build configuration list for PBXNativeTarget "RatiosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				526BD877240771A400A24AD2 /* Debug */,
+				526BD878240771A400A24AD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		526BD879240771A400A24AD2 /* Build configuration list for PBXNativeTarget "RatiosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				526BD87A240771A400A24AD2 /* Debug */,
+				526BD87B240771A400A24AD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		526BD84D240771A100A24AD2 /* Ratios.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				526BD84E240771A100A24AD2 /* Ratios.xcdatamodel */,
+			);
+			currentVersion = 526BD84E240771A100A24AD2 /* Ratios.xcdatamodel */;
+			path = Ratios.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 526BD83E240771A100A24AD2 /* Project object */;
+}

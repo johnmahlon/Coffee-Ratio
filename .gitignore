@@ -2,11 +2,25 @@
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
+<<<<<<< HEAD
+## User settings
+xcuserdata/
+
+## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
+*.xcscmblueprint
+*.xccheckout
+
+## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
+build/
+DerivedData/
+*.moved-aside
+=======
 ## Build generated
 build/
 DerivedData/
 
 ## Various settings
+>>>>>>> c170eb8e8b512ef448f60ddc93f021f54826410c
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -15,6 +29,13 @@ DerivedData/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
+<<<<<<< HEAD
+
+## Obj-C/Swift specific
+*.hmap
+
+## App packaging
+=======
 xcuserdata/
 
 ## Other
@@ -24,6 +45,7 @@ xcuserdata/
 
 ## Obj-C/Swift specific
 *.hmap
+>>>>>>> c170eb8e8b512ef448f60ddc93f021f54826410c
 *.ipa
 *.dSYM.zip
 *.dSYM
@@ -38,6 +60,15 @@ playground.xcworkspace
 # Packages/
 # Package.pins
 # Package.resolved
+<<<<<<< HEAD
+# *.xcodeproj
+#
+# Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
+# hence it is not needed unless you have added a package configuration file to your project
+# .swiftpm
+
+=======
+>>>>>>> c170eb8e8b512ef448f60ddc93f021f54826410c
 .build/
 
 # CocoaPods
@@ -49,4 +80,38 @@ playground.xcworkspace
 # Pods/
 #
 # Add this line if you want to avoid checking in source code from the Xcode workspace
+<<<<<<< HEAD
+# *.xcworkspace
+
+# Carthage
+#
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts
+
+Carthage/Build/
+
+# Accio dependency management
+Dependencies/
+.accio/
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo.
+# Instead, use fastlane to re-generate the screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/#source-control
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Code Injection
+#
+# After new code Injection tools there's a generated folder /iOSInjectionProject
+# https://github.com/johnno1962/injectionforxcode
+
+iOSInjectionProject/
+=======
 *.xcworkspace
+>>>>>>> c170eb8e8b512ef448f60ddc93f021f54826410c
