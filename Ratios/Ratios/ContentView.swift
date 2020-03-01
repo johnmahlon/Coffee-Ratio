@@ -16,6 +16,12 @@ struct ContentView: View {
             Divider()
                 .background(Color("Primary"))
                 .frame(width: CGFloat(267))
+            
+            WaterInput()
+
+            Divider()
+            .background(Color("Primary"))
+            .frame(width: CGFloat(267))
 
             TimerView()
 
