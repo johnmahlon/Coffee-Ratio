@@ -1,7 +1,7 @@
 # Ratios
 [![Build Status](https://travis-ci.org/johnmahlon/Coffee-Ratio.svg?branch=master)](https://travis-ci.org/johnmahlon/Coffee-Ratio)
 
-This is an open source app made to help home brewers brew their coffee by calculating a the grams of water needed,
+This is an open source app made to help home brewers brew their coffee by calculating the grams of water needed,
 and run a timer all in the same screen. 
 
 This is perfect for:
