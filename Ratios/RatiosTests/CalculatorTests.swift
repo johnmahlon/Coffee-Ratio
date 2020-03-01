@@ -11,10 +11,8 @@ import XCTest
 
 class CalculatorTests: XCTestCase {
 
-    let viewModel = CalculatorViewModel(waterRatio: 16)
-
     func testCalculation() {
-        XCTAssertEqual(viewModel.calculateGramsOfWaterTimes(coffee: 20), 320.0)
+        XCTAssertEqual(CalculatorViewModel.calculateGramsOfWaterTimes(waterRatio: 16, coffee: 20), 320.0)
     }
 
 }
