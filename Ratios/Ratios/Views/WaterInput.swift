@@ -10,7 +10,7 @@ import SwiftUI
 
 struct WaterInput: View {
 
-    @State var amount: String = ""
+    @Binding var amount: String
 
     var body: some View {
         VStack {

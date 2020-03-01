@@ -11,16 +11,7 @@ import Foundation
 typealias Grams = Double
 
 class CalculatorViewModel {
-
-    var waterRatio: Grams = 16
-
-    private init() {}
-
-    init(waterRatio: Grams) {
-        self.waterRatio = waterRatio
-    }
-
-    func calculateGramsOfWaterTimes(coffee: Grams) -> Grams {
+    static func calculateGramsOfWaterTimes(waterRatio: Grams, coffee: Grams) -> Grams {
       return waterRatio * coffee
     }
 }

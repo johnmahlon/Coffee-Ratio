@@ -23,6 +23,7 @@
 		52712492240B563000F26EF3 /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52712491240B563000F26EF3 /* CalculatorViewModel.swift */; };
 		52712496240B566D00F26EF3 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52712495240B566D00F26EF3 /* CalculatorTests.swift */; };
 		52712498240B58CF00F26EF3 /* WaterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52712497240B58CF00F26EF3 /* WaterInput.swift */; };
+		5271249A240B663A00F26EF3 /* WaterDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52712499240B663A00F26EF3 /* WaterDisplay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		52712491240B563000F26EF3 /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
 		52712495240B566D00F26EF3 /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
 		52712497240B58CF00F26EF3 /* WaterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterInput.swift; sourceTree = "<group>"; };
+		52712499240B663A00F26EF3 /* WaterDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterDisplay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 				526BD8832408CCFE00A24AD2 /* CoffeeInput.swift */,
 				526BD8852408D40200A24AD2 /* RatioInput.swift */,
 				52712497240B58CF00F26EF3 /* WaterInput.swift */,
+				52712499240B663A00F26EF3 /* WaterDisplay.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				52712498240B58CF00F26EF3 /* WaterInput.swift in Sources */,
 				526BD87E24077F4200A24AD2 /* TimerView.swift in Sources */,
 				526BD84A240771A100A24AD2 /* AppDelegate.swift in Sources */,
+				5271249A240B663A00F26EF3 /* WaterDisplay.swift in Sources */,
 				526BD84F240771A100A24AD2 /* Ratios.xcdatamodeld in Sources */,
 				526BD851240771A100A24AD2 /* ContentView.swift in Sources */,
 				526BD8862408D40200A24AD2 /* RatioInput.swift in Sources */,

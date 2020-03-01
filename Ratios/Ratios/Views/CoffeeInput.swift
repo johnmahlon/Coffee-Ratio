@@ -11,7 +11,7 @@ import SwiftUI
 
 struct CoffeeInput: View {
 
-    @State var amount: String = ""
+    @Binding var amount: String
 
     var body: some View {
         VStack {

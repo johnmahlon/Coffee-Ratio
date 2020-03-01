@@ -9,19 +9,48 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    @State var coffee: String = ""
+    @State var waterRatio: String = ""
+
+
     var body: some View {
         VStack {
-            CoffeeInput()
             
-            Divider()
-                .background(Color("Primary"))
-                .frame(width: CGFloat(267))
-            
-            WaterInput()
+            CoffeeInput(amount: $coffee)
 
-            Divider()
-            .background(Color("Primary"))
-            .frame(width: CGFloat(267))
+            VStack {
+                Spacer()
+                    .frame(height: CGFloat(20))
+
+                Divider()
+                    .frame(width: CGFloat(267))
+
+                Spacer()
+                    .frame(height: CGFloat(20))
+            }
+
+
+            WaterInput(amount: $waterRatio)
+
+            VStack {
+                Spacer()
+                    .frame(height: CGFloat(20))
+
+                Divider()
+                    .frame(width: CGFloat(267))
+
+                Spacer()
+                    .frame(height: CGFloat(20))
+            }
+
+            WaterDisplay(
+                waterRatio: $coffee,
+                coffee: $waterRatio
+            )
+
+            Spacer()
+                .frame(height: CGFloat(100))
 
             TimerView()
 
