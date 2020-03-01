@@ -12,7 +12,6 @@ import Combine
 private enum TimerState {
     case running
     case paused
-    case stopped
 }
 
 struct TimerView: View {
@@ -28,7 +27,7 @@ struct TimerView: View {
         VStack {
             Text(timerText)
                 .font(.system(size: 64))
-                .frame(width: CGFloat(200), height: CGFloat(52))
+                .frame(width: CGFloat(300), height: CGFloat(52))
                 .onReceive(viewModel.timer) { date in
                     self.secondsPassed += 1
 
@@ -49,6 +48,22 @@ struct TimerView: View {
                     .cornerRadius(CGFloat(10))
                     .foregroundColor(Color("AltText"))
             }
+
+            Spacer()
+                .frame(height: 12)
+
+            Button(action: {
+                self.timerState = .paused
+                self.viewModel.stop()
+                self.buttonText = "Start"
+                self.secondsPassed = 0
+                self.timerText = "00:00"
+            }) {
+                Text("Reset")
+                .font(.system(size: 17))
+                .fixedSize()
+                .foregroundColor(Color("Primary"))
+            }
         }
     }
 
@@ -63,8 +78,6 @@ struct TimerView: View {
             viewModel.start()
             buttonText = "Pause"
             timerState = .running
-
-        case .stopped: ()
         }
     }
 }
