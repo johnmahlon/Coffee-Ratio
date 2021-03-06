@@ -38,6 +38,7 @@ struct WaterInput: View {
                 
                 VStack(alignment: .center) {
                     TextField("", text: $amount, onCommit: {
+                        // Saving default ratio to storage
                         settingsModel.saveRatio(water: amount)
                     })
                     .frame(width: CGFloat(39), height: CGFloat(39))

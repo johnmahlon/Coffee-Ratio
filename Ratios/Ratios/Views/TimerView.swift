@@ -35,7 +35,7 @@ struct TimerView: View {
         }
         
         switch timerType {
-        case 0:
+        case 0: // Count up Timer
             VStack {
                 Text(timerText)
                     .font(.system(size: 64))
@@ -51,7 +51,7 @@ struct TimerView: View {
                 Spacer()
                     .frame(height: 20)
             }
-        default:
+        default: // Count down Timer
             Spacer()
                 .frame(height: 23.6)
             VStack {
@@ -75,7 +75,8 @@ struct TimerView: View {
                     .frame(height: 20)
             }
         }
-                
+        
+        // Moved code for buttons here so code isn't repeated
         Button(action: handleButtonPress) {
             Text(buttonText)
                 .font(.system(size: 20))

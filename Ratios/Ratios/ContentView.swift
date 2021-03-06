@@ -12,8 +12,8 @@ struct ContentView: View {
 
     @State var coffee: String = ""
     @State var waterRatio: String = UserDefaults.standard.string(forKey: "DefaultRatio") ?? ""
-    @State public var defaultMeasureUnit = 0
-    @State public var countUpOrDown = 0
+    @State public var defaultMeasureUnit = 0 // for picker object
+    @State public var countUpOrDown = 0 // for picker object
 
     var body: some View {
         ZStack {
@@ -53,7 +53,8 @@ struct ContentView: View {
                     Spacer()
                         .frame(height: CGFloat(20))
                 }
-
+                
+                // defaultMeasureUnit is used in calculateUnitOfMeasurementOfWaterTimes to determine the amount of water needed
                 WaterDisplay(
                     waterRatio: $coffee,
                     coffee: $waterRatio,
@@ -77,6 +78,7 @@ struct ContentView: View {
                 .pickerStyle(SegmentedPickerStyle())
                 .frame(width: 300)
                 
+                // countUpOrDown is used to determine whether to show count up or down timer
                 TimerView(timerType: $countUpOrDown)
             }
         }

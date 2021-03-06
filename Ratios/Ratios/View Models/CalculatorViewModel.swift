@@ -13,9 +13,9 @@ typealias UnitOfMeasurement = Double
 class CalculatorViewModel {
     static func calculateUnitOfMeasurementOfWaterTimes(waterRatio: UnitOfMeasurement, coffee: UnitOfMeasurement, unit: Int) -> UnitOfMeasurement {
         switch unit {
-        case 1:
+        case 1: // Tbsp formula
             return waterRatio * coffee * 15
-        default:
+        default: // Grams formula
             return waterRatio * coffee
         }
     }
