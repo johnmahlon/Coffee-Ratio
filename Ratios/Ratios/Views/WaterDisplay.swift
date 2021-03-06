@@ -11,6 +11,7 @@ import SwiftUI
 struct WaterDisplay: View {
     @Binding var waterRatio: String
     @Binding var coffee: String
+    @Binding var unit: Int
 
 
     var body: some View {
@@ -21,10 +22,11 @@ struct WaterDisplay: View {
 
             Text(
                 String(
-                    CalculatorViewModel.calculateGramsOfWaterTimes(
-                        waterRatio: Grams(waterRatio) ?? 0.0,
-                        coffee: Grams(coffee) ?? 0.0
-                    )
+                    CalculatorViewModel.calculateUnitOfMeasurementOfWaterTimes(
+                        waterRatio: UnitOfMeasurement(waterRatio) ?? 0.0,
+                        coffee: UnitOfMeasurement(coffee) ?? 0.0,
+                        unit: unit
+                    ).rounded()
                 )
             )
                 .fixedSize()
