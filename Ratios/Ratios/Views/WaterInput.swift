@@ -9,9 +9,10 @@
 import SwiftUI
 
 struct WaterInput: View {
-
+    
     @Binding var amount: String
-
+    private let settingsModel = SettingsViewModel()
+    
     var body: some View {
         VStack {
             Text("What ratio?")
@@ -21,30 +22,33 @@ struct WaterInput: View {
                 .font(.system(size: 24))
             
             HStack(spacing: 30) {
-
+                
                 VStack(alignment: .center) {
                     Text("1")
                         .frame(width: CGFloat(39), height: CGFloat(46))
                         .font(.system(size: 24))
-
+                    
                     Text("coffee")
                         .fixedSize()
                         .foregroundColor(Color("Text"))
                         .font(.system(size: 14))
                 }
-
+                
                 Text(":")
-
+                
                 VStack(alignment: .center) {
-                    TextField("", text: $amount)
-                        .frame(width: CGFloat(39), height: CGFloat(39))
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color("Primary"), lineWidth: 3)
-                            )
-                        .multilineTextAlignment(.center)
-                        .font(.system(size: 24))
-
+                    TextField("", text: $amount, onCommit: {
+                        settingsModel.saveRatio(water: amount)
+                    })
+                    .frame(width: CGFloat(39), height: CGFloat(39))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color("Primary"), lineWidth: 3)
+                    )
+                    .multilineTextAlignment(.center)
+                    .font(.system(size: 24))
+                    
+                    
                     Text("water")
                         .fixedSize()
                         .foregroundColor(Color("Text"))

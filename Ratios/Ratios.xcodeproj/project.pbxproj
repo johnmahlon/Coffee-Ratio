@@ -24,6 +24,8 @@
 		52712496240B566D00F26EF3 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52712495240B566D00F26EF3 /* CalculatorTests.swift */; };
 		52712498240B58CF00F26EF3 /* WaterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52712497240B58CF00F26EF3 /* WaterInput.swift */; };
 		5271249A240B663A00F26EF3 /* WaterDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52712499240B663A00F26EF3 /* WaterDisplay.swift */; };
+		FE95D3E025F2FAD80093AF71 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE95D3DF25F2FAD80093AF71 /* SettingsViewModel.swift */; };
+		FEC52E2925F0BFDF002C9142 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC52E2825F0BFDF002C9142 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		52712495240B566D00F26EF3 /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
 		52712497240B58CF00F26EF3 /* WaterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterInput.swift; sourceTree = "<group>"; };
 		52712499240B663A00F26EF3 /* WaterDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterDisplay.swift; sourceTree = "<group>"; };
+		FE95D3DF25F2FAD80093AF71 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		FEC52E2825F0BFDF002C9142 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +170,7 @@
 				526BD8852408D40200A24AD2 /* RatioInput.swift */,
 				52712497240B58CF00F26EF3 /* WaterInput.swift */,
 				52712499240B663A00F26EF3 /* WaterDisplay.swift */,
+				FEC52E2825F0BFDF002C9142 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 			children = (
 				526BD88124079A5B00A24AD2 /* TimerViewModel.swift */,
 				52712491240B563000F26EF3 /* CalculatorViewModel.swift */,
+				FE95D3DF25F2FAD80093AF71 /* SettingsViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -318,9 +324,11 @@
 				5271249A240B663A00F26EF3 /* WaterDisplay.swift in Sources */,
 				526BD84F240771A100A24AD2 /* Ratios.xcdatamodeld in Sources */,
 				526BD851240771A100A24AD2 /* ContentView.swift in Sources */,
+				FE95D3E025F2FAD80093AF71 /* SettingsViewModel.swift in Sources */,
 				526BD8862408D40200A24AD2 /* RatioInput.swift in Sources */,
 				526BD88224079A5B00A24AD2 /* TimerViewModel.swift in Sources */,
 				526BD84C240771A100A24AD2 /* SceneDelegate.swift in Sources */,
+				FEC52E2925F0BFDF002C9142 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

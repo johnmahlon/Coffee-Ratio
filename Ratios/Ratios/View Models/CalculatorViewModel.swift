@@ -8,10 +8,15 @@
 
 import Foundation
 
-typealias Grams = Double
+typealias UnitOfMeasurement = Double
 
 class CalculatorViewModel {
-    static func calculateGramsOfWaterTimes(waterRatio: Grams, coffee: Grams) -> Grams {
-      return waterRatio * coffee
+    static func calculateUnitOfMeasurementOfWaterTimes(waterRatio: UnitOfMeasurement, coffee: UnitOfMeasurement, unit: Int) -> UnitOfMeasurement {
+        switch unit {
+        case 1:
+            return waterRatio * coffee * 15
+        default:
+            return waterRatio * coffee
+        }
     }
 }

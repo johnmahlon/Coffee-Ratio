@@ -28,12 +28,6 @@ struct CoffeeInput: View {
                         .stroke(Color("Primary"), lineWidth: 3)
                 )
                 .multilineTextAlignment(.center)
-
-            Text("grams")
-                .fixedSize()
-                .foregroundColor(Color("Text"))
-                .font(.system(size: 14))
-
         }
     }
 }
