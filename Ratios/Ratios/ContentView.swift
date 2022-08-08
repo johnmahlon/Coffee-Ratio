@@ -15,45 +15,47 @@ struct ContentView: View {
 
 
     var body: some View {
-        VStack {
-            
-            CoffeeInput(amount: $coffee)
-
+        ScrollView {
             VStack {
+                
+                CoffeeInput(amount: $coffee)
+
+                VStack {
+                    Spacer()
+                        .frame(height: CGFloat(20))
+
+                    Divider()
+                        .frame(width: CGFloat(267))
+
+                    Spacer()
+                        .frame(height: CGFloat(20))
+                }
+
+
+                WaterInput(amount: $waterRatio)
+
+                VStack {
+                    Spacer()
+                        .frame(height: CGFloat(20))
+
+                    Divider()
+                        .frame(width: CGFloat(267))
+
+                    Spacer()
+                        .frame(height: CGFloat(20))
+                }
+
+                WaterDisplay(
+                    waterRatio: $coffee,
+                    coffee: $waterRatio
+                )
+
                 Spacer()
-                    .frame(height: CGFloat(20))
+                    .frame(height: CGFloat(100))
 
-                Divider()
-                    .frame(width: CGFloat(267))
+                TimerView()
 
-                Spacer()
-                    .frame(height: CGFloat(20))
-            }
-
-
-            WaterInput(amount: $waterRatio)
-
-            VStack {
-                Spacer()
-                    .frame(height: CGFloat(20))
-
-                Divider()
-                    .frame(width: CGFloat(267))
-
-                Spacer()
-                    .frame(height: CGFloat(20))
-            }
-
-            WaterDisplay(
-                waterRatio: $coffee,
-                coffee: $waterRatio
-            )
-
-            Spacer()
-                .frame(height: CGFloat(100))
-
-            TimerView()
-
+            }.padding(80)
         }
     }
 }
