@@ -8,6 +8,7 @@
 
 import Foundation
 import SwiftUI
+import Combine
 
 struct CoffeeInput: View {
 
@@ -28,6 +29,17 @@ struct CoffeeInput: View {
                         .stroke(Color("Primary"), lineWidth: 3)
                 )
                 .multilineTextAlignment(.center)
+                .keyboardType(.decimalPad)
+                .onReceive(Just(amount)) { newValue in
+                    
+                    
+                    
+                    let filtered = newValue.filter { "0123456789.0".contains($0) }
+                    if filtered != newValue {
+                        self.amount = filtered
+                    }
+                }
+            
 
             Text("grams")
                 .fixedSize()

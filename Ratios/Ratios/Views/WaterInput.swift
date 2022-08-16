@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Combine
 
 struct WaterInput: View {
 
@@ -44,6 +45,13 @@ struct WaterInput: View {
                             )
                         .multilineTextAlignment(.center)
                         .font(.system(size: 24))
+                        .keyboardType(.decimalPad)
+                        .onReceive(Just(amount)) { newValue in
+                            let filtered = newValue.filter { "0123456789.0".contains($0) }
+                            if filtered != newValue {
+                                self.amount = filtered
+                            }
+                        }
 
                     Text("water")
                         .fixedSize()
