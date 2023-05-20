@@ -8,7 +8,6 @@ This is perfect for:
 - Chemex
 - French Press
 - V60
-- Drip Pot
 - other slow bar methods 
 
 ![app screenshot](screenshot.png)
