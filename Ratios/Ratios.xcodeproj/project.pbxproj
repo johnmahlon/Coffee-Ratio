@@ -24,6 +24,8 @@
 		52712496240B566D00F26EF3 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52712495240B566D00F26EF3 /* CalculatorTests.swift */; };
 		52712498240B58CF00F26EF3 /* WaterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52712497240B58CF00F26EF3 /* WaterInput.swift */; };
 		5271249A240B663A00F26EF3 /* WaterDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52712499240B663A00F26EF3 /* WaterDisplay.swift */; };
+		AE92CF722C1DAD9F005124AB /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE92CF712C1DAD9F005124AB /* File.swift */; };
+		AEA2EDDA2C1D0A860094972B /* DecimalInputModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2EDCC2C1D085F0094972B /* DecimalInputModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		52712495240B566D00F26EF3 /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
 		52712497240B58CF00F26EF3 /* WaterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterInput.swift; sourceTree = "<group>"; };
 		52712499240B663A00F26EF3 /* WaterDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterDisplay.swift; sourceTree = "<group>"; };
+		AE92CF712C1DAD9F005124AB /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = SOURCE_ROOT; };
+		AEA2EDCC2C1D085F0094972B /* DecimalInputModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalInputModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 		526BD848240771A100A24AD2 /* Ratios */ = {
 			isa = PBXGroup;
 			children = (
+				AEA2EDCB2C1D08380094972B /* Modifiers */,
 				52712490240B554D00F26EF3 /* View Models */,
 				526BD87C24077F3300A24AD2 /* Views */,
 				526BD849240771A100A24AD2 /* AppDelegate.swift */,
@@ -161,6 +166,7 @@
 		526BD87C24077F3300A24AD2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AE92CF712C1DAD9F005124AB /* File.swift */,
 				526BD87D24077F4200A24AD2 /* TimerView.swift */,
 				526BD8832408CCFE00A24AD2 /* CoffeeInput.swift */,
 				526BD8852408D40200A24AD2 /* RatioInput.swift */,
@@ -177,6 +183,14 @@
 				52712491240B563000F26EF3 /* CalculatorViewModel.swift */,
 			);
 			path = "View Models";
+			sourceTree = "<group>";
+		};
+		AEA2EDCB2C1D08380094972B /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				AEA2EDCC2C1D085F0094972B /* DecimalInputModifier.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,7 +256,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "John Peden";
 				TargetAttributes = {
 					526BD845240771A100A24AD2 = {
@@ -313,12 +327,14 @@
 				526BD8842408CCFE00A24AD2 /* CoffeeInput.swift in Sources */,
 				52712492240B563000F26EF3 /* CalculatorViewModel.swift in Sources */,
 				52712498240B58CF00F26EF3 /* WaterInput.swift in Sources */,
+				AEA2EDDA2C1D0A860094972B /* DecimalInputModifier.swift in Sources */,
 				526BD87E24077F4200A24AD2 /* TimerView.swift in Sources */,
 				526BD84A240771A100A24AD2 /* AppDelegate.swift in Sources */,
 				5271249A240B663A00F26EF3 /* WaterDisplay.swift in Sources */,
 				526BD84F240771A100A24AD2 /* Ratios.xcdatamodeld in Sources */,
 				526BD851240771A100A24AD2 /* ContentView.swift in Sources */,
 				526BD8862408D40200A24AD2 /* RatioInput.swift in Sources */,
+				AE92CF722C1DAD9F005124AB /* File.swift in Sources */,
 				526BD88224079A5B00A24AD2 /* TimerViewModel.swift in Sources */,
 				526BD84C240771A100A24AD2 /* SceneDelegate.swift in Sources */,
 			);
@@ -394,6 +410,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -454,6 +471,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
