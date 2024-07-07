@@ -12,7 +12,11 @@ struct ContentView: View {
 
     @State var coffee: String = ""
     @State var waterRatio: String = ""
-
+  // Constant for CGFloat
+     private let spacingHeight: CGFloat = 20
+     private let dividerWidth: CGFloat = 267
+     private let bottomSpacerHeight: CGFloat = 100
+     private let sidePadding: CGFloat = 80
 
     var body: some View {
         ScrollView {
@@ -22,13 +26,13 @@ struct ContentView: View {
 
                 VStack {
                     Spacer()
-                        .frame(height: CGFloat(20))
+                        .frame(height:spacingHeight)
 
                     Divider()
-                        .frame(width: CGFloat(267))
+                        .frame(width:dividerWidth)
 
                     Spacer()
-                        .frame(height: CGFloat(20))
+                        .frame(height:spacingHeight)
                 }
 
 
@@ -36,13 +40,13 @@ struct ContentView: View {
 
                 VStack {
                     Spacer()
-                        .frame(height: CGFloat(20))
+                        .frame(height:spacingHeight)
 
                     Divider()
-                        .frame(width: CGFloat(267))
+                        .frame(width: dividerWidth)
 
                     Spacer()
-                        .frame(height: CGFloat(20))
+                        .frame(height:spacingHeight)
                 }
 
                 WaterDisplay(
@@ -51,11 +55,11 @@ struct ContentView: View {
                 )
 
                 Spacer()
-                    .frame(height: CGFloat(100))
+                    .frame(height:bottomSpacerHeight)
 
                 TimerView()
 
-            }.padding(80)
+            }.padding(sidePadding)
         }
     }
 }
