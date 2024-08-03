@@ -67,7 +67,7 @@ struct TimerView: View {
         }
     }
 
-    func handleButtonPress() {
+   private func handleButtonPress() {
         switch timerState {
         case .running:
             viewModel.stop()
