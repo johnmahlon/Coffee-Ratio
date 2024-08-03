@@ -38,6 +38,7 @@ struct WaterInput: View {
 
                 VStack(alignment: .center) {
                     TextField("", text: $amount)
+                        .decimalInput(text: $amount)
                         .frame(width: CGFloat(39), height: CGFloat(39))
                         .overlay(
                             RoundedRectangle(cornerRadius: 10)
@@ -46,12 +47,7 @@ struct WaterInput: View {
                         .multilineTextAlignment(.center)
                         .font(.system(size: 24))
                         .keyboardType(.decimalPad)
-                        .onReceive(Just(amount)) { newValue in
-                            let filtered = newValue.filter { "0123456789.0".contains($0) }
-                            if filtered != newValue {
-                                self.amount = filtered
-                            }
-                        }
+
 
                     Text("water")
                         .fixedSize()
