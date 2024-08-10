@@ -8,7 +8,7 @@
 
 import Foundation
 
-typealias Grams = Double
+typealias Grams = Decimal
 
 class CalculatorViewModel {
     static func calculateGramsOfWaterTimes(waterRatio: Grams, coffee: Grams) -> Grams {
