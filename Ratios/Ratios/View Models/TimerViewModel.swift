@@ -14,7 +14,7 @@ class TimerViewModel {
     private var cancellableTimer: Cancellable?
 
     public func start() {
-        
+        HapticManager.shared.vibrate(for: .success)
         cancellableTimer = timer.connect()
     }
 
