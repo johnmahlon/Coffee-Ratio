@@ -117,6 +117,7 @@
 		526BD848240771A100A24AD2 /* Ratios */ = {
 			isa = PBXGroup;
 			children = (
+				D04847D32E17D7FD00B269AF /* Manager */,
 				52712490240B554D00F26EF3 /* View Models */,
 				526BD87C24077F3300A24AD2 /* Views */,
 				526BD849240771A100A24AD2 /* AppDelegate.swift */,
@@ -177,6 +178,13 @@
 				52712491240B563000F26EF3 /* CalculatorViewModel.swift */,
 			);
 			path = "View Models";
+			sourceTree = "<group>";
+		};
+		D04847D32E17D7FD00B269AF /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
