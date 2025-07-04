@@ -14,10 +14,12 @@ class TimerViewModel {
     private var cancellableTimer: Cancellable?
 
     public func start() {
+        
         cancellableTimer = timer.connect()
     }
 
     public func stop() {
+        HapticManager.shared.vibrate(for: .error)
         guard let cTimer = cancellableTimer else {
             return
         }
