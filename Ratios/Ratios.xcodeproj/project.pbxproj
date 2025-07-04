@@ -24,6 +24,7 @@
 		52712496240B566D00F26EF3 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52712495240B566D00F26EF3 /* CalculatorTests.swift */; };
 		52712498240B58CF00F26EF3 /* WaterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52712497240B58CF00F26EF3 /* WaterInput.swift */; };
 		5271249A240B663A00F26EF3 /* WaterDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52712499240B663A00F26EF3 /* WaterDisplay.swift */; };
+		D04847D52E17D81A00B269AF /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04847D42E17D81A00B269AF /* HapticManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		52712495240B566D00F26EF3 /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
 		52712497240B58CF00F26EF3 /* WaterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterInput.swift; sourceTree = "<group>"; };
 		52712499240B663A00F26EF3 /* WaterDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterDisplay.swift; sourceTree = "<group>"; };
+		D04847D42E17D81A00B269AF /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 		D04847D32E17D7FD00B269AF /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				D04847D42E17D81A00B269AF /* HapticManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				526BD851240771A100A24AD2 /* ContentView.swift in Sources */,
 				526BD8862408D40200A24AD2 /* RatioInput.swift in Sources */,
 				526BD88224079A5B00A24AD2 /* TimerViewModel.swift in Sources */,
+				D04847D52E17D81A00B269AF /* HapticManager.swift in Sources */,
 				526BD84C240771A100A24AD2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
